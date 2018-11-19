@@ -1,0 +1,26 @@
+<form [formGroup]="triangleForm" data-ts="Form">
+  <fieldset>
+    <label>
+      <span>Dimensions</span>
+      <div data-ts="Note">
+        <i class="ts-icon-info"></i>
+        <p>
+          Please type the triangle dimensions as integers separated by commas,
+          i.e. 20,20,20.
+        </p>
+      </div>
+      <input type="text" required formControlName="dimensions" />
+    </label>
+  </fieldset>
+  <button
+    data-ts="Button"
+    class="ts-primary"
+    [disabled]="triangleForm.pristine"
+    (click)="calculateTriangle()"
+  >
+    <span>Calculate</span>
+  </button>
+  <button data-ts="Button" class="ts-tertiary" (click)="clearInput()">
+    <span>Clear</span>
+  </button>
+</form>
