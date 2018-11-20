@@ -8,7 +8,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Please first clone this project and run `npm install`.
 
-Once you do that, you can run `ng serve` and navigate to `http://localhost:4200/`. 
+Once you do that, you can run either `npm start` or `ng serve` and navigate to `http://localhost:4200/`. 
 
 ## Running unit tests
 
