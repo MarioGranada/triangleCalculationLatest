@@ -28,4 +28,9 @@ describe('LandingPageComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should have a triangle type component', () => {
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('app-triangle-type')).not.toBe(null);
+  });
 });
