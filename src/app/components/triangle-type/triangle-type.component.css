@@ -1,0 +1,10 @@
+:host {
+  margin: 20px 0;
+  display: block;
+}
+.input-fieldset .input-label {
+  padding: 15px 0;
+}
+.triangle-form-header {
+  color: #00aeff;
+}

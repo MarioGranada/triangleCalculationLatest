@@ -1,7 +1,7 @@
-<form [formGroup]="triangleForm" data-ts="Form">
-  <fieldset>
-    <label>
-      <span>Dimensions</span>
+<form [formGroup]="triangleForm" data-ts="Form" class="triangle-form">
+  <fieldset class="input-fieldset">
+    <label class="input-label">
+      <h1 class="triangle-form-header">Dimensions</h1>
       <div data-ts="Note">
         <i class="ts-icon-info"></i>
         <p>
@@ -18,7 +18,7 @@
     [disabled]="triangleForm.pristine"
     (click)="calculateTriangle()"
   >
-    <span>Calculate</span>
+    <span>Calculate <i class="ts-icon-proceed"></i> </span>
   </button>
   <button data-ts="Button" class="ts-tertiary" (click)="clearInput()">
     <span>Clear</span>
